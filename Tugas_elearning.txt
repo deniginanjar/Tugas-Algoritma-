@@ -1,0 +1,66 @@
+proses pencarian adalah proses yang paling penting dalam pengelolaan data ,
+yaitu untuk menemukan nilai tertentu di dalam sekumpulan data.
+misalnya untuk mencari data di dalam sekumpulan data yang banyak jadi dengan 
+proses pencarian kita bisa mudah menemukan data yang ingin kita cari dan 
+setelah data yang kita cari kita bisa merubah, memanipulasi , memperbaharui maupun menghapus data tersebut.
+di dalam algoritma pemograman ,tentu akan berhadapan dengan proses memanipulasi data 
+dengan ini kita membutuhkan algoritma yang bisa di pakai untuk mencari dta tersebut 
+karena dengan menggunakan algoritma pemograman pencarian kita bisa mencari data dengan mudah 
+di dalam banyak sekali sekumpulan - sekumpulan data.
+pencarian(2)
+pencarian dilakukan di dalam array, yaitu sekumpulan data yang memiliki tipe data yang sama.
+Hasil pencarian data dengan sebuah array bisa bermacam - macam misalnya
+1. data itu sendiri di dapat dari indek array
+2. ekpresi boolean , bisa dengan hasil true (data ditemukan) atau false (data tidak ditemukan)
+3. bisa dengan informasi ketemu atau tidak ketemu
+4. dan sebagainya tergantung kebutuhan dan hasil program yang kita buat.
+jadi di dalam algoritma pemograman pencarian(2)
+kita memakai array sebagai wadah penampung data dan kita memasukan program apa yang kita buat..
+program yang kita buat ada beberapa pembacaan dalam algoritma pencarian(2)
+1. kita membuat program array yang pertama kita menginput data yang ingin kita infut..
+2. terus pembacaan yang kedua dengan boolean ( true atau false )kita memasukan data 
+yang akan kita cari dan data akan dicari oleh program yang kita buat jadi misalnya 
+kita membuat data dengan indek array [10]
+terus kita mencari elemen ke 5 program akan mencari dari array ke satu bila tidak ditemukan 
+pogram akan mencari dari index berikutnya dan seterusnya tapi bila 
+ditemukan program akan berhenti dan memunculkan data tersebut.
+3. terus yang ketuganya data akan dimunculkan dari program ke layar dan bila data berhasil 
+di temukan maka akan bertulisan data ditemukan tetapi bila tidak ditemukan data yang kita cari 
+maka akan mengeluarkan tampilan data tidak ditemukan.
+itulah pembahasan singkat tentang program pencarian(2)
+bila banyak kesalahan atau ada bahasa dan kata - kata yang tidak dimengerti saya minta maaf yang 
+sebesar - besarnya karena saya masih belajar.
+terima kasih atas perhatiannya...
+berikut saya lampirkan program pencarian (2) sesuai yang saya jelaskan di atas :
+
+#include <iostream>
+using namespace std;
+
+int main (){
+	int x [10], mencari;
+	bool ketemu;
+	for (int i = 0; i<10; i++)
+	{
+		cout << "Memasukan data:";
+		cin >> x [i];
+}
+cout << "Memasukan data yang akan dicari: ";
+cin >> mencari;
+for (int i = 0; i<10; i++)
+{
+	if (x[i] == mencari)
+	{
+		ketemu = true;
+		break;
+	} else {
+		ketemu = false;
+	}
+}
+if (ketemu == true){
+	cout << "Data berhasil temukan" << endl;
+} else {
+	cout << "Data tidak berhasil ditemukan" << endl;
+}
+return 0;
+
+}
